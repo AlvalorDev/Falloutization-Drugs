@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Remove isCombatEnhancingDrug from vanilla Yayo and GoJuice -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Yayo"]/comps/li[@Class="CompProperties_Drug"]/isCombatEnhancingDrug</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="GoJuice"]/comps/li[@Class="CompProperties_Drug"]/isCombatEnhancingDrug</xpath>
+  </Operation>
+
+  <!-- Add isCombatEnhancingDrug to FCP combat chems -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Psycho"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Buffout"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Turbo"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Slasher"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Steady"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Cateye"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Ultrajet"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Orange_Mentats"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_X_Cell"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Daddy_O"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Chem_Dixons_Jet"]/comps/li[@Class="CompProperties_Drug"]</xpath>
+    <value><isCombatEnhancingDrug>true</isCombatEnhancingDrug></value>
+  </Operation>
+</Patch>
