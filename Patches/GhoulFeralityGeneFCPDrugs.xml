@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch MayRequire="Rick.FCP.Ghouls">
+  <!-- Replace vanilla drugs in FCP_Gene_Ferality with FCP stimpaks, Jet variants, Psycho, Buffout and mixes (Jet/Psycho as components) -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/GeneDef[defName='FCP_Gene_Ferality']/modExtensions/li[@Class='FCP_Ghoul.FeralityGene_ModExtension']/drugs</xpath>
+    <value>
+      <drugs>
+        <!-- Stimpak variants -->
+        <li>FCP_Chem_Diluted_Stimpak</li>
+        <li>FCP_Chem_Stimpak</li>
+        <li>FCP_Chem_Ultra_Stimpak</li>
+        <li>FCP_Chem_Super_Stimpak</li>
+        <li>FCP_Chem_Auto_Stimpak</li>
+        <li>FCP_Chem_Auto_Super_Stimpak</li>
+        <!-- Jet variants and mixes (Jet, Jet+Psycho, Jet+Nuka, refined Jet) -->
+        <li>FCP_Chem_Jet</li>
+        <li>FCP_Chem_Ultrajet</li>
+        <li>FCP_Chem_Rocket</li>
+        <li>FCP_Chem_Dixons_Jet</li>
+        <!-- Psycho, Buffout -->
+        <li>FCP_Chem_Psycho</li>
+        <li>FCP_Chem_Buffout</li>
+      </drugs>
+    </value>
+  </Operation>
+</Patch>
