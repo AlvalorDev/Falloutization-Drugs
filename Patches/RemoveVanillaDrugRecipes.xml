@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Remove recipeMaker from vanilla drugs so they cannot be crafted -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="PsychiteTea"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Flake"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Yayo"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="WakeUp"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="GoJuice"]/recipeMaker</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Penoxycyline"]/recipeMaker</xpath>
+  </Operation>
+</Patch>
