@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch MayRequire="Ludeon.RimWorld.Ideology;Rick.FCP.Chems">
+  <!-- Beggars ask for Radaway instead of Penoxycyline -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/QuestScriptDef[defName='Beggars']/questDescriptionRules/rulesStrings/li[contains(., 'requestedThingDefName==Penoxycyline') and contains(., 'beggarCount==1')]</xpath>
+    <value>
+      <li>claimInfo(beggarCount==1,requestedThingDefName==FCP_Chem_Radaway)->[beggars0_nameDef] needs [requestedThing_label] to save an irradiated friend</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/QuestScriptDef[defName='Beggars']/questDescriptionRules/rulesStrings/li[contains(., 'requestedThingDefName==Penoxycyline') and contains(., 'beggarCount>=2')]</xpath>
+    <value>
+      <li>claimInfo(beggarCount>=2,requestedThingDefName==FCP_Chem_Radaway)->They want [requestedThing_label] so they can travel safely while looking for a new place to call home</li>
+    </value>
+  </Operation>
+</Patch>
