@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Remove PenoxycylineProduction prerequisite from FCP research -->
+  <Operation Class="PatchOperationRemove" MayRequire="Rick.FCP.Core.Tools">
+    <xpath>Defs/ResearchProjectDef[defName="FCP_Research_MedX_Production"]/prerequisites/li[text()="PenoxycylineProduction"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove" MayRequire="Rick.FCP.Core.Tools">
+    <xpath>Defs/ResearchProjectDef[defName="FCP_Research_RadX_Production"]/prerequisites/li[text()="PenoxycylineProduction"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove" MayRequire="Rick.FCP.Core.Tools">
+    <xpath>Defs/ResearchProjectDef[defName="FCP_Research_RadAway_Manufacturing"]/prerequisites/li[text()="PenoxycylineProduction"]</xpath>
+  </Operation>
+</Patch>
