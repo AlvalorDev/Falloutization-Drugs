@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Prevent vanilla drugs from spawning in resource drop pods  -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='PsychiteTea']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='Flake']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='Yayo']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='WakeUp']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='GoJuice']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='Penoxycyline']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='Luciferium']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName='Ambrosia']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName='Drug_Psilocap']</xpath>
+    <value><preventSpawningInResourcePod>true</preventSpawningInResourcePod></value>
+  </Operation>
+</Patch>
