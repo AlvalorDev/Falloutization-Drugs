@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Replace Luciferium with X-Cell in Scarlands crate loot -->
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingSetMakerDef[defName='MapGen_ScarlandsHermeticCrate']/root/options/li[thingSetMaker/fixedParams/filter/thingDefs/li='Luciferium']/thingSetMaker/fixedParams/filter/thingDefs</xpath>
+    <value>
+      <thingDefs>
+        <li>FCP_Chem_X_Cell</li>
+      </thingDefs>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingSetMakerDef[defName='MapGen_HighValueCrate']/root/options/li[thingSetMaker/fixedParams/filter/thingDefs/li='Luciferium']/thingSetMaker/fixedParams/filter/thingDefs</xpath>
+    <value><thingDefs><li>FCP_Chem_X_Cell</li></thingDefs></value>
+  </Operation>
+
+  <!-- Replace Luciferium with FCP X-Cell in ancient temple loot -->
+  <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingSetMakerDef[defName='MapGen_AncientTempleContents']/root/options/li[thingSetMaker/fixedParams/filter/thingDefs/li='Luciferium']/thingSetMaker/fixedParams/filter/thingDefs/li</xpath>
+      <value><li>FCP_Chem_X_Cell</li></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingSetMakerDef[defName='MapGen_AncientComplexRoomLoot_Default']/root/options/li[thingSetMaker/fixedParams/filter/thingDefs/li='Luciferium']/thingSetMaker/fixedParams/filter/thingDefs/li</xpath>
+      <value><li>FCP_Chem_X_Cell</li></value>
+  </Operation>
+</Patch>
